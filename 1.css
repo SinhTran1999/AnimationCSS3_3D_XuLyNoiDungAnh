@@ -1,0 +1,147 @@
+*{margin: 0; padding: 0;}
+
+i.nutx.fa.fa-close {
+    float: right;
+    font-size: 44px;
+    color: gold;
+    cursor: pointer;
+}
+
+i.nutx.fa.fa-close:hover {
+    color: white;
+}
+
+.quickviewto {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+    width: 80%;
+    height: 80%;
+    overflow-y: scroll;
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.den {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #00000087;
+    z-index: 2;
+    top: 0;
+    left: 0px;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.gia {
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+a.tensp {
+    color: #666;
+    font-size: 15px;
+    padding: 29px 0px 11px 0px;
+    display: block;
+}
+
+span.quickview {
+    z-index: 4;
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    background: rgb(49,49,49,0.4);
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    transition: 0.4s;
+    left: -50%;
+    /*Khi di chuyen vao thi hien tay con tro chuot*/
+    cursor: pointer;
+}
+span.quickview:hover{
+	 background: rgb(49,49,49,0.9);
+}
+span.wishlist {
+    z-index: 4;
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    background: rgb(49,49,49,0.4);
+    bottom: 0px;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    transition: 0.4s;
+    right: -50%;
+     /*Khi di chuyen vao thi hien tay con tro chuot*/
+    cursor: pointer;
+}
+span.wishlist:hover{
+	 background: rgb(49,49,49,0.9);
+
+}
+span.nutdieuhuong .trai , span.nutdieuhuong .phai{
+    height: 600px;
+    width: 30px;
+    background: #000000a3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    color: white;
+    line-height: 600px;
+    text-align: center;
+    font-size: 26px;
+    transition: 0.4s;
+    opacity: 0;
+     /*Khi di chuyen vao thi hien tay con tro chuot*/
+    cursor: pointer;
+}
+span.nutdieuhuong .phai{
+    left:450px;
+    opacity:0;
+}
+.slideanh img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+span.slideanh {}
+
+.motsanpham {
+    width: 480px;
+    height: 780px;
+    float: left;
+    margin: 1px;
+}
+
+.khoisanpham {
+    display: block;
+    width: 480px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.khoisanpham:hover span.quickview {
+    left: 0%;
+}
+.khoisanpham:hover span.wishlist {
+    right: 0%;
+}
+
+.khoisanpham:hover .trai, .khoisanpham:hover .phai {
+    opacity: 1;
+} 
+.hienlen{
+	opacity: 1;
+	visibility: visible;
+}
